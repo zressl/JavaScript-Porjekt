@@ -1,0 +1,588 @@
+
+/* === Small CSS Reset === */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* Navigation */
+
+nav {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 3px solid #11aebd;
+}
+
+/* Logo linksbündig*/
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin: 25px;
+}
+
+/* Navigation Burger-menu */
+
+nav .menu {
+  display: none;
+  width: 60px;
+  height: 50px;
+  margin: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .menu .linie {
+  width: 48px;
+  height: 8px;
+  margin: 4px;
+  border-radius: 3px;
+  background-color: #11aebd;
+}
+
+/* Navigation UL */
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+nav ul li {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hidden {
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 5;
+  border-radius: 8px;
+  border: 1px solid lightblue;
+  background: #a6e3e9ad;
+  margin-left: -20px;
+  margin-top: 8px;
+}
+
+.hidden li {
+  padding: 15px;
+}
+
+.hidden li:hover {
+  background: #a6e3e9;
+  border-radius: 8px;
+}
+
+/* Sprachauswahl*/
+
+nav .sprachen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav .sprachen i {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.flaggen {
+  padding: 5px;
+  display: none;
+}
+
+.flaggen img {
+  width: 50px;
+}
+
+
+/* Slider */
+
+.slider {
+  background-image: url(Img/water-768745_1920.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  /* border: 1px solid #11aebd; */
+  border-bottom: 3px solid #11aebd;
+  overflow: hidden;
+}
+
+.texte {
+  height: 100%;
+  width: 400%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 25px;
+}
+
+.slide {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide span {
+  padding: 30px;
+}
+
+.sliderleftright .arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  color: white;
+}
+
+.sliderleftright i {
+  font-size: 30px;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+/* Runde Bilder mit Text */
+
+.einfuhrung {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrap.middle {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.wrap .bild {
+  border-radius: 50%;
+  margin: 50px;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.wrap .bild img {
+  width: 100%;
+  /* width: 200%; */
+}
+
+.wrap .break {
+  width: 360px;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Zitat Ziel deiner Träume */
+
+.träume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 80px;
+  background: rgb(247, 245, 245);
+  padding: 150px;
+}
+
+.überschrift {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.underline {
+  width: 320px;
+  height: 3px;
+  /* background: lightgray; */
+  background: #11aebd;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 130px;
+}
+
+.bilder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.angebote img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+}
+
+.angebote img:hover {
+  opacity: 50%;
+}
+
+/* Kontakt */
+
+.formular {
+  background: rgb(247, 245, 245);
+  padding-bottom: 50px;
+}
+
+.sprich {
+  text-align: center;
+  padding-top: 100px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.personen {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.radio {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+fieldset {
+  border: none;
+}
+
+#company {
+  margin-left: 80px;
+}
+
+.form-control, .nachricht {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+}
+
+.form-control input {
+  margin: 10px;
+  border-radius: 20px;
+  border: solid 1px rgb(105, 104, 104);
+  height: 40px;
+  padding-left: 10px;
+}
+
+
+::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(115, 143, 148);
+}
+
+
+::-moz-placeholder {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(115, 143, 148);
+}
+
+
+:-ms-input-placeholder {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(115, 143, 148);
+}
+
+
+::-ms-input-placeholder {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(115, 143, 148);
+}
+
+
+::placeholder {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(115, 143, 148);
+}
+
+.auswahl{
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.auswahl select{
+  font-size: 16px;
+  margin: 10px;
+}
+
+.checkboxen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.angabe, .check {
+  margin: 10px;
+}
+
+textarea {
+  caret-color: rgb(57, 255, 7);
+  caret-color: #11aebd;
+  width: 360px;
+  height: 180px;
+  border: 1px solid rgb(105, 104, 104);
+  padding: 0.5em;
+  border-radius: 20px;
+}
+
+#submit {
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #11aebd;
+  color: #fcfcfc;
+  outline: none;
+  border: none;
+}
+
+#submit:hover {
+  background-color: #a6e3e9;
+  color: black;
+}
+
+form span {
+  color: red;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.contact-container {
+  background: rgb(247, 245, 245);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .bild img {
+  border-radius: 15px;
+  width: 360px;
+  height: 250px;
+  margin: auto;
+}
+
+.container iframe {
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  nav ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    z-index: 100;
+    border: 1px solid lightblue;
+    background: #a6e3e9ad;
+    border-radius: 0 0 0 8px;
+  }
+  nav .hidden {
+    display: none;
+    margin-top: -55px;
+  }
+}
